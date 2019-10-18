@@ -57,7 +57,6 @@
                                 <div>{{ $task->name }}</div>
                             </td>
 
-                            <td>
                                 <!-- 刪除按鈕 -->
                             <td>
                                 <form action="/task/{{ $task->id }}" method="POST">
@@ -65,7 +64,6 @@
                                     {{ method_field('DELETE') }}
                                     <button>刪除任務</button>
                                 </form>
-                            </td>
                             </td>
                         </tr>
                     @endforeach
